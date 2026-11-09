@@ -1,35 +1,35 @@
-<p align="center"><img src="assets/portfolio-banner.svg" alt="Medical FAQ Prototype — A small Streamlit health information project" width="100%"></p>
+# AI Medical Bot
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-Prototype-d94f91?style=for-the-badge" alt="Python prototype">
-  <img src="https://img.shields.io/badge/Interface-Streamlit-e982b1?style=for-the-badge" alt="Streamlit interface">
-</p>
+An AI-powered chatbot that provides basic medical advice, symptom checking, and answers to common health questions.  
+**Note: Not for diagnosis! Always consult a healthcare professional.**
 
-# Medical FAQ Prototype
+## Features
 
-A small Streamlit project for exploring basic health-question routing and FAQ lookup.
+- Symptom checker: Suggests possible causes for symptoms.
+- Medical FAQ: Answers common health questions.
+- User-friendly web interface (Streamlit).
+- Safety disclaimer.
 
-## What it demonstrates
+## Tech Stack
 
-- A text-input interface for health questions.
-- Routing between an FAQ lookup and a symptom-checking path.
-- A clear reminder to seek qualified care for medical concerns.
+- Python
+- NLP: spaCy, HuggingFace Transformers
+- Dataset: MedQuAD, Symptoma (public sources)
+- Web: Streamlit
 
-## Run locally
-
-The repository includes `app.py` and a dependency file named `requirements`:
+## Setup
 
 ```bash
-python -m pip install -r requirements
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Review the project dependencies and data files before running; this repository is an educational prototype, not a validated clinical tool.
+## Example Usage
 
-## Safety
+- "I have a sore throat and cough. What should I do?"
+- "What is diabetes?"
+- "What medicine can I take for a headache?"
 
-This project cannot diagnose, treat, or rule out a condition. It is not a substitute for professional medical care. Do not use it for emergencies or medication decisions; contact a qualified healthcare professional or local emergency service when needed.
+## Disclaimer
 
----
-
-<p align="center">More work: <a href="https://github.com/Anuuuuuuu18">github.com/Anuuuuuuu18</a> · Made with care in pink 🎀</p>
+This bot is for informational purposes only. Always consult a healthcare professional for medical advice.
